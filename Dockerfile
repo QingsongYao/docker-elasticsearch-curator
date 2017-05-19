@@ -13,7 +13,7 @@ RUN arch="$(dpkg --print-architecture)" \
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r curator && useradd -r -g curator curator
 
-RUN pip install elasticsearch-curator==4.0.6
+RUN pip install elasticsearch-curator==5.0.4
 
 WORKDIR /opt
 
